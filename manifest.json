@@ -1,0 +1,30 @@
+{
+    "name": "Random Color Generator",
+    "description": "Get Random Color",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+    "commands": {
+        "open_extension": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+E",
+            "mac": "Command+Shift+E"
+          },
+          "description": "Open my extension"
+        }
+      },
+      "background": {
+        "service_worker": "background.js"
+      },
+      "permissions": ["activeTab"]
+      
+}
